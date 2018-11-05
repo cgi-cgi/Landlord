@@ -173,7 +173,8 @@ class TenantManager
             });
         });
 
-        $this->deferredModels = collect();
+        // avoid to clear list of deffered models in favor to ability to apply scopes again
+        // $this->deferredModels = collect();
     }
 
     /**
